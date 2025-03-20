@@ -1,0 +1,117 @@
+/* General Body and Page Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background: hsl(190, 28%, 12%);
+    background-size: cover;
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+}
+
+/* Heading Styling */
+h2 {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Form Styling */
+form {
+    background-color: #567ea62e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limits the width of the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* File Input Styling */
+    input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        background-color: #b09f9f96;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
+
+    /* Hover effect for file input */
+    input[type="file"]:hover {
+        border-color: #505050;
+    }
+
+/* Submit Button Styling */
+button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #095181;
+}
+
+/* Image Preview Styling */
+.image-preview {
+    margin-top: 10px;
+    width: 100%;  /* Make it responsive */
+    max-width: 350px; /* Max width of the image preview */
+    height: 200px; /* Adjust the height for a rectangular shape */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Remove background color from the image */
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;/* Ensures the image fits nicely within the container */
+}
+
+/* File Input Label Styling */
+label {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Additional styling for small screens */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    .image-preview {
+        width: 100%; /* Make image preview full width on small screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button text size */
+    }
+
+    input[type="file"] {
+        font-size: 0.9rem; /* Adjust file input size on smaller screens */
+    }
+}

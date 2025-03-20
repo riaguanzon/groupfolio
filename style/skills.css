@@ -1,0 +1,497 @@
+*{
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+body{
+
+  background: hsl(190, 28%, 12%);
+  background-size: cover;
+  margin-top: 50px;
+
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid #919191;
+  padding: 9px;
+  font-weight: 600;
+}
+a:hover{
+  background-color: #919191 ;
+  border: 3px solid #919191;
+  transition: background-color 0.3s
+}
+.left{
+  display: flex;
+  flex-direction: row;
+  margin-left: 85%;
+  justify-content: space-evenly;
+}
+h1{
+  font-weight: 750;
+}
+
+form {
+  background-color: #567ea62e;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  margin: 20px auto;
+  max-width: 1000x;
+}
+img{
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 150px; /* Adjust the size of the image */
+  border-radius: 50%; /
+}
+p{
+  text-align: center;
+  font-weight: 700;
+}
+form h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+form .form-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+
+form .form-control {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent; /* Default background is transparent */
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s; /
+}
+
+form .form-control:focus {
+  outline: none;
+  color: white;
+  border-color: #464646;
+  background-color: rgba(255, 255, 255, 0.041); 
+}
+
+form .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+
+form .col-md-2,
+form .col-md-3,
+form .col-md-4,
+form .col-md-6 {
+  flex: 1;
+  min-width: 150px;
+}
+
+form .btn-primary {
+  background-color: rgb(89, 203, 221);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+form .text-danger {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+form select {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent; /* Default background is transparent */
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+form select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: rgba(255, 255, 255, 0.041); 
+  color: rgb(0, 0, 0);
+}
+
+
+form option{
+  color: rgb(0, 0, 0);
+  background-color: rgba(51, 51, 51, 0.082);
+
+}
+
+
+
+
+form input[type="submit"] {
+  background-color: rgb(89, 203, 221);
+
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(48, 114, 124);
+
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.button-group button:hover {
+  background-color: #787777;
+  color: white;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: 2px solid #4b4b4b;
+  background-color: rgb(255, 255, 255);
+  color: #4b4b4b;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+
+}
+
+.button-group button.selected {
+  background-color: #4b4b4b;
+  color: white;
+}
+
+
+/* General container styling */
+.skills-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button-group input[type="checkbox"] {
+  display: none;
+}
+
+
+.button-group label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #797979;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.button-group input[type="checkbox"]:checked + label {
+  background-color: #3b3b3b; 
+  transform: scale(1.05); 
+
+}
+
+
+.button-group label:hover {
+  background-color: #575656;
+  transform: scale(1.03);
+}
+
+
+@media (max-width: 768px) {
+  .button-group {
+      flex-direction: column;
+      gap: 8px;
+  }
+
+  .button-group label {
+      width: 100%;
+      text-align: center;
+  }
+}
+.add{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+/*added
+/* Basic reset */
+/* Reset styles */
+
+
+/* Reset styles */
+
+/* Container for skills section */
+.skills-center {
+  display: flex;
+  flex-direction: row; /* Ensures inputs are in a row */
+  flex-wrap: wrap; /* Allows wrapping if the row overflows */
+  justify-content: center; /* Align inputs to the left */
+  gap: 15px; /* Adds space between inputs */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for each input field */
+#dynamicInputs input[type="text"] {
+  width: 250px; /* Width for each input field */
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Focus effect for input fields */
+#dynamicInputs input[type="text"]:focus {
+  outline: none;
+  border-color: #464646;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Button styling */
+.skills-center button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Ensures the button is below the inputs */
+  display: block; /* Ensures the button is centered and block-level */
+  width: 100%;
+  max-width: 250px; /* Restricts button width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-center button:hover {
+  background-color: #2980b9;
+}
+
+
+
+/*button
+/* Add button styling */
+
+
+
+
+
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.icon-btn {
+width: 50px;
+height: 50px;
+border: 1px solid #cdcdcd;
+background: transparent;
+border-radius: 25px;
+overflow: hidden;
+position: relative;
+transition: width 0.3s ease-in-out;
+font-weight: 500;
+font-family: inherit;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.add-btn {
+position: relative;
+display: flex;
+align-items: center;
+white-space: nowrap; /* Prevent wrapping */
+}
+
+.add-btn:hover {
+width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+content: "";
+position: absolute;
+height: 4px;
+width: 10px;
+top: calc(50% - 2px);
+background-color: #3498db;
+}
+
+.add-btn::before {
+left: 14px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+
+.add-btn::after {
+right: 14px;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+}
+
+.icon-btn:focus {
+outline: none;
+}
+
+.btn-txt {
+opacity: 0;
+overflow: hidden;
+transition: opacity 0.3s ease-in-out;
+margin-left: 8px; /* Space between icon and text */
+display: inline-block;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+width: 4px;
+border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+opacity: 1;
+}
+
+.add-icon::before,
+.add-icon::after {
+transition: all 0.3s ease-in-out;
+content: "";
+position: absolute;
+height: 20px;
+width: 2px;
+top: calc(50% - 10px);
+background-color: #3498db;
+
+}
+
+.add-icon::before {
+left: 22px;
+border-radius: 2px 0 0 2px;
+}
+
+.add-icon::after {
+right: 22px;
+border-radius: 0 2px 2px 0;
+}
+
+.add-btn:hover .add-icon::before {
+left: 15px;
+height: 4px;
+top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+right: 15px;
+height: 4px;
+top: calc(50% - 2px);
+
+}
+
+.input-group {
+display: flex;
+align-items: center;
+}
+
+.input-group .form-control {
+flex: 1; /* Make the input take up the remaining space */
+}
+
+.input-group .btn {
+margin-left: 8px; /* Add some space between the input and the button */
+}
+/* Transition container */
+.page {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 9999;
+transform: translateX(100%);
+transition: transform 0.5s ease-in-out;
+}
+
+.page.active {
+transform: translateX(0);
+}
+/* Slide transition for the form */
+.form {
+transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+transform: translateX(0);
+opacity: 1;
+}
+
+.form.slide-out {
+transform: translateX(-100%);
+opacity: 0;
+}
+

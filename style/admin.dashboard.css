@@ -1,0 +1,233 @@
+
+
+.parent {
+  margin: 50px;
+  margin-top: 90px;
+}
+h1{
+    font-weight: 700;
+}
+span{
+    font-weight: bold;
+}
+.align{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Styling for the image inside the blob */
+.home__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;  
+
+  position: relative;
+}
+
+.home__blob {
+  width: 100%;
+  height: 100%;
+}
+
+.home__blob-img {
+  object-fit: cover; /* Ensure the image fills the blob area without distortion */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Rounded corners if the blob shape permits */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home__blob-img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  opacity: 0.8; /* Slight opacity effect on hover */
+}
+
+/* Center the link container */
+.add-project-container {
+  display: flex;                         /* Enable flexbox */
+  justify-content: center;               /* Horizontally center */
+  align-items: center;                   /* Vertically center */
+  margin-bottom: 30px;     /* Ensure the container takes up full viewport height */
+}
+
+/* Style for the "Add Projects" link */
+.add-project-link {
+  display: inline-block;                 /* Make the link behave like a button */
+  padding: 12px 8px;                    /* Add padding for clickable area */
+  border: 3px solid  rgb(114, 200, 213);            /* Green background (you can change the color) */
+  color: white;                          /* White text color */
+  font-size: 16px;                       /* Font size */
+  font-weight: 600;                      /* Make the text bold */
+  text-align: center;                    /* Center the text */
+  text-decoration: none;                 /* Remove underline from the link */
+  border-radius: 5px;                    /* Round the corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+ 
+}
+
+/* Hover effect for the "Add Projects" link */
+.add-project-link:hover {
+  background-color:   rgb(114, 200, 213);             /* Darker green when hovering */
+  transform: scale(1.05);     
+         /* Slightly enlarge the link when hovered */
+}
+
+/* Focus effect to improve accessibility */
+.add-project-link:focus {
+  outline: 2px solid #76D7C4;             /* Add a focus outline */
+  outline-offset: 4px;                    /* Add some space around the outline */
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #dedede;
+  --bg-color-sub: #222;
+  --bg-color: #323232;
+  --main-color: #dedede;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(25px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  stroke: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+/* Ensure no background color for the entire team section */
+.projectsection {
+  background-color: transparent !important;
+  color: white;
+}
+
+/* Ensure no background color for the project background */
+/* Ensuring the background color of the project section is transparent */
+.project__bg {
+  color: white;
+  background-color: transparent !important;
+}
+
+/* Ensure no background color for the project container */
+.project__container {
+  background-color: transparent !important;
+}
+
+/* Styling for the project data */
+.project__data {
+  background-color: transparent !important;
+  margin-bottom: 20px;
+}
+.name{
+  /* color: red; */
+  font-weight: lighter;
+}
+/* Styling for the project title */
+.project__title {
+  font-size: 28 px;
+  font-weight: 800;
+  color: #ffffff; /* Adjust the color for better readability */
+  text-align: center;
+}
+
+/* Styling for the buttons within the project data */
+.button--white {
+  background-color: #76D7C4 !important; /* Add a light green background color */
+  color: white;
+  border: 2px solid #76D7C4; /* Match border with button color */
+}
+
+.button--white:hover {
+  background-color: #48C9B0 !important; /* Slightly darker green on hover */
+  color: white;
+}
+
+/* Styling for the table displaying team member requests */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent !important; /* Remove background for the table */
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center; /* Center-align the text in the table */
+  /* border: 1px solid #ddd; */
+  background-color: transparent !important; /* Remove background color for cells */
+}
+
+table th {
+  font-weight: bold;
+}
+
+/* Styling for the accept and decline buttons inside the table */
+.btn-success, .btn-danger {
+  background-color: #28a745; /* Green background for the accept button */
+  color: white;
+  border: 1px solid #28a745;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red background for the decline button */
+  border: 1px solid #dc3545;
+}
+
+.btn-success:hover, .btn-danger:hover {
+  opacity: 0.8;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+table td .btn {
+  display: inline-block; /* Ensure the buttons are displayed inline */
+}
+

@@ -5,35 +5,39 @@
   font-style: normal;
 }
 body {
-  background-image: url(port.png);
+  background: hsl(190, 28%, 12%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* .form-floating {
-  height: 4.3rem;
-} */
 
-form{
+
+form {
   width: 100%;
+  padding: auto;
 }
-.role{
+.role {
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+h5 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
 }
 
 span {
   color: rgb(255, 148, 148);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
-.f-child{
+.f-child {
   width: 100%;
 }
 h1 {
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
   color: white;
 }
 p {
@@ -41,15 +45,21 @@ p {
 }
 section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-right: 70px;
+  /* padding-right: 70px; */
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 30px;
   background-color: #d6d0d023;
   box-shadow: 0px 0px 27px -2px rgba(10, 10, 10, 0.54);
@@ -59,7 +69,7 @@ section {
   text-align: center;
 }
 input[type="submit"] {
-  background-color: #1e87f8;
+  background-color: rgb(89, 203, 221);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -74,15 +84,17 @@ input[type="submit"] {
 
 /* Hover effect */
 input[type="submit"]:hover {
-  background-color: #0056b3; /* Slightly darker on hover */
+  background-color: rgb(45, 140, 154);; /* Slightly darker on hover */
 }
 
 a {
   text-decoration: none;
-  color: #6dadf0;
+  color: rgb(89, 203, 221);
 }
 a:hover {
-  color: #90beef;
+  color: rgb(48, 142, 156);
+  transition: background-color 0.5s ease;
+
 }
 .password-wrapper {
   position: relative;

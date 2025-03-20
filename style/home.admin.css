@@ -1,29 +1,108 @@
+/* General Body Styling */
 * {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Poppins", sans-serif;
 }
 
-.parent{
-    align-items: center;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Arial', sans-serif; */
+  /* background-color: #f4f4f9; */
+  background: hsl(190, 28%, 12%);
+  color: white;
 }
 
-.child{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
+/* Parent Container */
+.parent {
+  margin: 50px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px); /* Adjust for header/footer spacing */
 }
-h1{
-    font-size: 55px;
-    font-weight: 700;
+
+/* Child Container */
+.child {
+  text-align: center;
+  background-color: #567ea62e;
+  padding: 40px 20px ;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 1, 1, 1);
+  width: 100%;
+  max-width: 500px;
 }
-a{
-    border: 2px solid;
-    padding: 10px;
-    border-radius: 25px;
-    text-decoration: none;
+
+/* Welcome Message */
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+
+  margin-bottom: 10px;
 }
-a:hover{
-    color: red;
+
+/* Button Styling */
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(89, 203, 221);
+
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button a:hover {
+  background-color: rgb(66, 159, 171);
+  transform: scale(1.05);
+  /* font-size: 10px; */
+}
+
+/* Logout Link */
+.log {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.log a {
+  text-decoration: none;
+  color: #2d8cf0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.log a:hover {
+  color: #1864ab;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 10;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fa-ellipsis {
+  margin-left: 50px;
 }
