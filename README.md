@@ -9,7 +9,7 @@ This is my **final portfolio project** for **Web Development 2**. It is a **Cont
 - **User Account Control**: Deactivate user accounts when needed.
 
 ## 🛠️ Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
 - **Frameworks/Libraries**: Bootstrap
