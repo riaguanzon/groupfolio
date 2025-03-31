@@ -17,8 +17,8 @@ This is my **final portfolio project** for **Web Development 2**. It is a **Cont
 ## 🚀 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/riaguanzon/wdportfolio.git
-cd wdportfolio
+git clone https://github.com/riaguanzon/groupfolio.git
+
 ```
 
 ### 2️⃣ Set Up the Environment
@@ -30,7 +30,7 @@ cd wdportfolio
 
 ### 3️⃣ Open the link
 ```sh
-http://localhost/wdportfolio/admin/groupfolio.php
+http://localhost/groupfolio/admin/groupfolio.php
 ```
 
 
