@@ -40,10 +40,8 @@ http://localhost/wdportfolio/admin/groupfolio.php
 - Add team members to projects.
 - Deactivate accounts when necessary.
 
-## 🤝 Contributing
-Feel free to fork this repository and submit a pull request if you want to improve this project!
 
-💡 **Access to ADMIN**
-username: admin
-password: admin123
+## 💡 **Access to ADMIN**
+- username: admin
+- password: admin123
 
